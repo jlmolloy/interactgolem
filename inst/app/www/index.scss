@@ -1,0 +1,194 @@
+
+// Variables
+$pink:#ea5084;
+$lightpink:#f085a9;
+$green:#80bd26;
+$black:#111111;
+$grey:#666666;
+$white:#FFFFFF;
+$stone:#e3dcd3;
+$steel:#a6bcc6;
+$lightsky:#c6dae7;
+
+$background-dark-gradient: linear-gradient(to bottom, lighten($black, 10%), transparent);
+$background-dark-gradient-rev: linear-gradient(to bottom, transparent, lighten($black, 10%));
+$background-pink-gradient: linear-gradient(to bottom, $lightpink, $pink);
+
+$title-font: bold 24px Raleway, sans-serif;
+$sub-font: light 22px Raleway, sans-serif;
+$body-font: 18px Raleway, sans-serif;
+
+$footer-height: 5.5rem;
+
+
+// Mixin
+@mixin text-div($header-color, $background){
+  position: relative;
+  // top: $top-position;
+  // left: $left-position;
+  // transform: translate(-$left-position, -$top-position);
+  text-align: left;
+  padding: 1rem;
+  padding-bottom: calc(#{$footer-height} + 2rem);
+  background: $background;
+  max-width: 40%;
+  min-width: 300px;
+  font:$body-font;
+
+
+  h1, h2{
+    color: $header-color;
+    font: $title-font;
+  }
+}
+
+@mixin primary-button($bg-color, $hover-color, $font-color) {
+  background-color: $bg-color;
+  border-radius: 1rem;
+  border: none;
+  color: $font-color;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: $body-font;
+  transition: all 0.1s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+// Classes
+.navbar{
+  padding-left: 5px;
+  vertical-align: baseline;
+  background: $background-dark-gradient;
+  font:$title-font;
+
+
+
+}
+
+.navbar-default {
+    border-color: $black;
+    height:80px;
+}
+
+.navbar-brand{
+  padding: 5px 20px;
+  margin: 5px;
+  align-items: center;
+}
+
+.navbar-nav{
+  padding-top: 20px;
+  padding-right: 20px;
+  float: right;
+  .active{
+  a{
+    text-decoration: underline !important;
+    background-color: transparent !important;
+    }
+    background-color: transparent !important;
+  }
+  li{
+    background-color: transparent !important;
+    a{
+      font: $title-font;
+      color:$pink !important;
+      padding: 5px;
+      margin: 5px;
+      &:hover{
+        color:$lightpink !important;
+      }
+    }
+  }
+}
+
+body {
+  font: $body-font;
+  color: $white;
+  background-color: $black;
+
+      .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: calc(100vh - #{$footer-height});
+      width: 100%;
+    }
+}
+
+.footer {
+  position: fixed;
+  padding: 5px 5px;
+  float: left;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: $background-dark-gradient-rev;
+  color: $black;
+  text-align: center;
+  margin-top: 2rem;
+  height: $footer-height;
+
+  .container-left{
+    float: left;
+    padding: 0.5rem 1rem;
+    padding-top: 1rem;
+
+    img{
+      height: 3.5rem;
+    }
+  }
+  .container-right{
+
+    float:right;
+    padding: 1rem 1.5rem;
+    padding-top: 2rem;
+
+
+
+    .svg-icon{
+        fill: $pink;
+        stroke: $pink;
+        height: 2rem;
+              }
+  }
+
+  a{
+    padding: 1rem 1rem
+  }
+
+}
+
+.about-main {
+  @include text-div($pink, transparent);
+}
+
+.green-button{
+  @include primary-button($green, lighten($green, 20%), $black)
+}
+
+.pink-button{
+  @include primary-button($pink, $lightpink, $black)
+  }
+
+  .mainplot {
+  @include text-div($pink, transparent)
+
+
+
+  rect{
+    fill: $black !important;
+    stroke: $black !important;
+  }
+}
+

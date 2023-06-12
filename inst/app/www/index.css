@@ -1,0 +1,183 @@
+.navbar {
+  padding-left: 5px;
+  vertical-align: baseline;
+  background: linear-gradient(to bottom, #2b2b2b, transparent);
+  font: bold 24px Raleway, sans-serif;
+}
+
+.navbar-default {
+  border-color: #111111;
+  height: 80px;
+}
+
+.navbar-brand {
+  padding: 5px 20px;
+  margin: 5px;
+  align-items: center;
+}
+
+.navbar-nav {
+  padding-top: 20px;
+  padding-right: 20px;
+  float: right;
+}
+
+.navbar-nav .active {
+  background-color: transparent !important;
+}
+
+.navbar-nav .active a {
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+.navbar-nav li {
+  background-color: transparent !important;
+}
+
+.navbar-nav li a {
+  font: bold 24px Raleway, sans-serif;
+  color: #ea5084 !important;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbar-nav li a:hover {
+  color: #f085a9 !important;
+}
+
+body {
+  font: 18px Raleway, sans-serif;
+  color: #FFFFFF;
+  background-color: #111111;
+}
+
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh - 5.5rem);
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  padding: 5px 5px;
+  float: left;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #2b2b2b);
+  color: #111111;
+  text-align: center;
+  margin-top: 2rem;
+  height: 5.5rem;
+}
+
+.footer .container-left {
+  float: left;
+  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+}
+
+.footer .container-left img {
+  height: 3.5rem;
+}
+
+.footer .container-right {
+  float: right;
+  padding: 1rem 1.5rem;
+  padding-top: 2rem;
+}
+
+.footer .container-right .svg-icon {
+  fill: #ea5084;
+  stroke: #ea5084;
+  height: 2rem;
+}
+
+.footer a {
+  padding: 1rem 1rem;
+}
+
+.about-main {
+  position: relative;
+  text-align: left;
+  padding: 1rem;
+  padding-bottom: calc(5.5rem + 2rem);
+  background: transparent;
+  max-width: 40%;
+  min-width: 300px;
+  font: 18px Raleway, sans-serif;
+}
+
+.about-main h1, .about-main h2 {
+  color: #ea5084;
+  font: bold 24px Raleway, sans-serif;
+}
+
+.green-button {
+  background-color: #80bd26;
+  border-radius: 1rem;
+  border: none;
+  color: #111111;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: 18px Raleway, sans-serif;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.green-button:hover {
+  background-color: #b0e168;
+}
+
+.green-button:active {
+  transform: scale(0.95);
+}
+
+.pink-button {
+  background-color: #ea5084;
+  border-radius: 1rem;
+  border: none;
+  color: #111111;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: 18px Raleway, sans-serif;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.pink-button:hover {
+  background-color: #f085a9;
+}
+
+.pink-button:active {
+  transform: scale(0.95);
+}
+
+.mainplot {
+  position: relative;
+  text-align: left;
+  padding: 1rem;
+  padding-bottom: calc(5.5rem + 2rem);
+  background: transparent;
+  max-width: 40%;
+  min-width: 300px;
+  font: 18px Raleway, sans-serif;
+}
+
+.mainplot h1, .mainplot h2 {
+  color: #ea5084;
+  font: bold 24px Raleway, sans-serif;
+}
+
+.mainplot rect {
+  fill: #111111 !important;
+  stroke: #111111 !important;
+}

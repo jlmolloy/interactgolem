@@ -1,3 +1,7 @@
+# Sass code compilation
+sass::sass(input = sass::sass_file("inst/app/www/index.scss"), output = "inst/app/www/index.css", cache = NULL)
+
+
 # Set options here
 options(golem.app.prod = FALSE) # TRUE = production mode, FALSE = development mode
 
@@ -12,4 +16,4 @@ golem::detach_all_attached()
 golem::document_and_reload()
 
 # Run the application
-run_app()
+shiny::runApp(appDir = here::here())
